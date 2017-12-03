@@ -43,7 +43,7 @@
                         </a>
                         <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">
                             <i class="glyphicon glyphicon-duplicate"></i>
-                            Habilidades
+                            
                         </a>
                         <ul class="collapse list-unstyled" id="pageSubmenu">
                             <li><a href="#">Page 1</a></li>
@@ -109,8 +109,10 @@
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#">Boton</a></li>
-                                <li><a href="#">Reportar 404</a></li>
+                                <li><a href="#"><body style="background-color: rgb(255, 255, 255)">
+    <p></p>
+    <button onclick="dark()">Tema Oscuro</button></a></li>
+                                <li><a href="#"></a></li>
                             </ul>
                         </div>
                     </div>
@@ -236,6 +238,18 @@
 
         <!-- jQuery CDN -->
          <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		 
+		  <script>
+    function dark() {
+        if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+
+                document.body.style.backgroundColor = '#333';
+        }
+        else {
+                document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+        }
+    }
+    </script>
          <!-- Bootstrap Js CDN -->
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
