@@ -151,7 +151,7 @@ ul li
 }
 
 .background-img{
- background:url('images/back.jpg');
+/* background:url('images/back.jpg');*/
  position: fixed; 
  bottom: 0px; 
  right: 0px;
