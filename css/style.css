@@ -2,6 +2,7 @@ html, body
 {
   margin: 0;
   padding: 0;
+  margin-left: 200px;
 }
 
 html
@@ -27,7 +28,7 @@ strong
 h1
 {
     color: #313131;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
     padding-top: 1rem;
 }
@@ -80,9 +81,15 @@ ul li
 {
     margin-top: .3em;
 }
+.wrapper {
+        display: flex;
+}
 
 .sidebar
 {
+	  min-width: 250px;
+        max-width: 250px;
+        height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -96,6 +103,9 @@ ul li
     background-color: #202020;
     box-sizing: border-box;
     line-height: 1.5;
+	position: fixed; 
+   overflow-y: scroll;
+   top: 0; right: 0; bottom: 0; left: 0;
 }
 
 .sidebar h1
@@ -104,6 +114,7 @@ ul li
     color: #CCC;
     margin: 0;
     font-weight: normal;
+	
 }
 
 .content
@@ -265,4 +276,24 @@ p.announce
 p.announce a
 {
   color: red;
+}
+
+	
+	.label-video
+{
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: .5em;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    background-color: #FF0000;
+    vertical-align: middle;
+    margin: auto 0 auto 0;
+}
+
 }
