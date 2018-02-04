@@ -18,8 +18,7 @@
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
-				    <div>Cueva Digital</div>
-                      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+				      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
                         <i class="glyphicon glyphicon-align-left"></i>
                       </button> 
                 </div>
@@ -29,7 +28,7 @@
                     <li class="active">
                         <a href="#homeSubmenu" data-toggle="collapse"  aria-expanded="false">
                             <i class="glyphicon glyphicon-home"></i>
-                            Sobre mi
+                            
                         </a>
                         <ul class="collapse list-unstyled" id="homeSubmenu">
                             <li><a href="#">Web personal</a></li>
@@ -39,10 +38,10 @@
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-briefcase"></i>
-                            Ley
+                            
                         </a>
                         <a href="#pageSubmenu"  aria-expanded="false">
-                            <i class="glyphicon glyphicon-link"></i>Cosa
+                            <i class="glyphicon glyphicon-link"></i>
                             
                         </a>
                    
@@ -50,26 +49,26 @@
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-link"></i>
-                            Academia
+                            
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-paperclip"></i>
-                            Trabajo
+                            
                         </a>
                     </li>
                     <li>
                         <a href="#">
                             <i class="glyphicon glyphicon-paperclip"></i>
-                           Libros
+                           
                         </a>
                     </li>
                    
 					  <li class="#">
                         <a href="#helpSubmenu"  aria-expanded="false">
                             <i class="glyphicon glyphicon-home"></i>
-                            Notas
+                            
                         </a>
                         
                     </li>
@@ -194,14 +193,14 @@
  
         <script type="text/javascript">
        $(document).ready(function () {
-
+ $('#sidebar').toggleClass('active');
+       
     $("#sidebar").mCustomScrollbar({
          theme: "minimal"
     });
 
     $('#sidebarCollapse').on('click', function () {
         // open or close navbar
-        $('#sidebar').toggleClass('active');
         // close dropdowns
         $('.collapse.in').toggleClass('in');
         // and also adjust aria-expanded attributes we use for the open/closed arrows
