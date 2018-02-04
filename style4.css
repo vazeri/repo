@@ -175,7 +175,7 @@ i, span {
 		}
 
 #sidebar.active {
-    min-width: 60px;
+    min-width: 20px;
     max-width: 60px;
      height: 100vh;
 

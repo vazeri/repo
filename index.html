@@ -26,7 +26,7 @@
 						
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="#homeSubmenu" >
+                        <a href="#homeSubmenu" data-toggle="collapse"  aria-expanded="false">
                             <i class="glyphicon glyphicon-home"></i>
                             
                         </a>
@@ -45,6 +45,24 @@
                             
                         </a>
                    
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-link"></i>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-link"></i>
+                            
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="glyphicon glyphicon-link"></i>
+                            
+                        </a>
                     </li>
                     <li>
                         <a href="#">
@@ -195,15 +213,17 @@
        $(document).ready(function () {
  $('#sidebar').toggleClass('active');
        
-    $("a[href^='#']").click(function(e) {
-	e.preventDefault();
-	
-	var position = $($(this).attr("href")).offset().top;
+    $("#sidebar").mCustomScrollbar({
+         theme: "minimal"
+    });
 
-	$("body, html").animate({
-		scrollTop: position
-	} /* speed */ );
-});
+    $('#sidebarCollapse').on('click', function () {
+        // open or close navbar
+        // close dropdowns
+        $('.collapse.in').toggleClass('in');
+        // and also adjust aria-expanded attributes we use for the open/closed arrows
+        // in our CSS
+    });
 
 });
         </script>
